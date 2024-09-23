@@ -30,8 +30,10 @@ Route::get('detail/create',[DetailController::class,'create']);
 Route::get('detail', [DetailController::class, 'index']);
 
 Route::get('room/create',[RoomController::class,'create']);
+Route::get('room',[RoomController::class, 'index']);
 
 Route::get('room_type/create',[Room_typeController::class,'create']);
+Route::get('room_type',[Room_typeController::class, 'index']);
 
 Route::get('/', function () {
     return view('welcome');

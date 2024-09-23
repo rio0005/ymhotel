@@ -24,6 +24,5 @@ class GuestsTableSeeder extends Seeder
             'address' => '京都府京都市',
             'tel' => '12-3456-7890'
         ]);
-       
     }
 }
