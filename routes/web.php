@@ -7,6 +7,7 @@ use App\Models\reservation;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\Room_typeController;
+use App\Models\guest;
 use App\Models\Room_type;
 
 /*
@@ -22,10 +23,13 @@ use App\Models\Room_type;
 
 Route::get('guest/create',[GuestController::class,'create']);
 Route::get('guest',[GuestController::class,'index']);
+Route::get('guest/form',[GuestController::class,'form']);
+Route::post('guest',[GuestController::class,'store'])->name('guest.store');
+
 
 Route::get('reservation/create',[ReservationController::class,'create']);
 Route::get('reservation', [ReservationController::class, 'index']);
-Route::post('reservation',[ReservationController::class,'form'])->name('reservation.form');
+
 
 Route::get('detail/create',[DetailController::class,'create']);
 Route::get('detail', [DetailController::class, 'index']);
