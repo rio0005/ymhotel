@@ -15,4 +15,5 @@ class GuestController extends Controller
     public function create() {
         return view('guest.create');
     }
+
 }

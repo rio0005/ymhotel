@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
     <th>部屋種別ID</th><th>部屋番号</th>
     @foreach($rooms as $room)
     <tr>
-        <td>{{$room->room_type_id}}</td>
+        <td>{{$room->room_type->id}}</td>
         <td>{{$room->room_number}}</td>
     </tr>
     @endforeach

@@ -13,14 +13,14 @@ class ReservationSeeder extends Seeder
     public function run(): void
     {
         \App\Models\Reservation::create([
-            'userid' => '1',
+            'guest_id' => '1',
             'people' => '3',
             'check_in' => '2024-9-14',
             'check_out' => '2024-9-16',
         ]);
 
         \App\Models\Reservation::create([
-            'userid' => '2',
+            'guest_id' => '2',
             'people' => '2',
             'check_in' => '2024-9-20',
             'check_out' => '2024-9-17',

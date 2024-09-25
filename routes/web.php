@@ -25,6 +25,7 @@ Route::get('guest',[GuestController::class,'index']);
 
 Route::get('reservation/create',[ReservationController::class,'create']);
 Route::get('reservation', [ReservationController::class, 'index']);
+Route::post('reservation',[ReservationController::class,'form'])->name('reservation.form');
 
 Route::get('detail/create',[DetailController::class,'create']);
 Route::get('detail', [DetailController::class, 'index']);

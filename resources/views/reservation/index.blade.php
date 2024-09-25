@@ -27,7 +27,7 @@
     <th>利用者ID</th><th>人数</th><th>チェックイン</th><th>チェックアウト</th>
     @foreach($reservations as $reservation)
     <tr>
-        <td>{{$reservation->userid}}</th>
+        <td>{{$reservation->guest->id ?? '匿名'}}</th>
         <td>{{$reservation->people}}</td>
         <td>{{$reservation->check_in}}</th>
         <td>{{$reservation->check_out}}</th>
