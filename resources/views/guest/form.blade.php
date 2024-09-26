@@ -16,6 +16,7 @@
 /* Form Layout */
 .form-wrapper {
   background: #fafafa;
+  /* border: 1px solid black; */
   margin: 3em auto;
   padding: 0 1em;
   max-width: 370px;

@@ -36,11 +36,13 @@
         <nav>
             <ul class="main-nav">
                 <li><a href="/guest">利用者一覧</a></li>
-                <li><a href="/reserve">予約一覧</a></li>
+                <li><a href="/reservation">予約一覧</a></li>
+                <li><a href="/room_type">部屋種一覧</a></li>
+                <li><a href="/room">部屋一覧</a></li>
             </ul>
             <ul class="main-nav">
-                <li><a href="/guest/add">利用者一覧</a></li>
-                <li><a href="/reserve/add">予約一覧</a></li>
+                <li><a href="/guest/form">利用者追加</a></li>
+                <li><a href="/reservation/form">予約追加</a></li>
             </ul>
         </nav>
     </header>

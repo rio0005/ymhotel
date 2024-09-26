@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 <style>
-body {
+/* body {
 background:#c1e0ff;
 font-family:sans-serif;
 }
@@ -40,16 +40,29 @@ white-space: nowrap;
 
 table tr:nth-child(odd){
         background-color: #99ccff;
-    }
+    } */
 
+    table{
+        width: 80%;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    table th, table td{
+        padding: 10px 0;
+        text-align: center;
+    }
+    table tr:nth-child(odd){
+        background-color: #eee;
+    }
 </style>
 </head>
 
 <body>
     <table>
-    <th>部屋タイプ</th><th>宿泊可能人数</th>
+    <th>部屋種別ID</th><th>部屋タイプ</th><th>宿泊可能人数</th>
     @foreach($room_types as $room_type)
     <tr>
+        <td>{{$room_type->id}}</td>
         <td>{{$room_type->room_name}}</td>
         <td>{{$room_type->people}}</td>
     </tr>

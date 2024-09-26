@@ -2,9 +2,10 @@
 
 @section('body')
     <table>
-    <th>お名前</th><th>ご住所</th><th>電話番号</th>
+    <th>お客様ID</th><th>お名前</th><th>ご住所</th><th>電話番号</th>
     @foreach($guests as $guest)
     <tr>
+        <td>{{$guest->id}}</th>
         <td>{{$guest->name}}</th>
         <td>{{$guest->address}}</td>
         <td>{{$guest->tel}}</th>

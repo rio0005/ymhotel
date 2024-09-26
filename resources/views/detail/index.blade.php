@@ -8,11 +8,12 @@
 </head>
 <body>
     <table>
-    <th>予約ID</th><th>部屋ID</th><th>宿泊日</th><th>宿泊料</th>
+    <th>予約明細ID</th><th>予約ID</th><th>部屋ID</th><th>宿泊日</th><th>宿泊料</th>
     @foreach($details as $detail)
     <tr>
+        <td>{{$detail->id}}</td>
         <td>{{$detail->reservation_id}}</th>
-        <td>{{$detail->roomid}}</td>
+        <td>{{$detail->room_id}}</td>
         <td>{{$detail->check_in}}</th>
         <td>{{$detail->fee}}</th>
     </tr>

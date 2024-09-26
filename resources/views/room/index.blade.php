@@ -23,9 +23,10 @@
 
 <body>
     <table>
-    <th>部屋種別ID</th><th>部屋番号</th>
+    <th>部屋ID</th><th>部屋種別ID</th><th>部屋番号</th>
     @foreach($rooms as $room)
     <tr>
+        <td>{{$room->id}}</td>
         <td>{{$room->room_type->id}}</td>
         <td>{{$room->room_number}}</td>
     </tr>
