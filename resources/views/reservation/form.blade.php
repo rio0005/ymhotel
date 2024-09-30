@@ -135,6 +135,7 @@ input[type="date"]::-webkit-datetime-edit {
         <input type="submit" value="予約" class="button">
         </div>
     </form>
+    <a href="../guest">利用者一覧ページ</a>
     </div>
 </body>
 </html>

@@ -28,10 +28,10 @@
     @foreach($reservations as $reservation)
     <tr>
         <td>{{$reservation->id}}</td>
-        <td>{{$reservation->guest->id}}</th>
-        <td>{{$reservation->guest->name}}様</th>
-        <td>{{$reservation->guest->address}}</th>
-        <td>{{$reservation->guest->tel}}</th>
+        <td>{{$reservation->guest->id??'非登録'}}</th>
+        <td>{{$reservation->guest->name??'非登録'}}様</th>
+        <td>{{$reservation->guest->address??'非登録'}}</th>
+        <td>{{$reservation->guest->tel??'非登録'}}</th>
         <td>{{$reservation->people}}</td>
         <td>{{$reservation->check_in}}</th>
         <td>{{$reservation->check_out}}</th>

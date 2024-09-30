@@ -18,7 +18,7 @@
         }
         a {
             text-decoration: none;
-        }
+        } 
         .main-nav {
             display: flex;
             font-size: 1.25rem;
