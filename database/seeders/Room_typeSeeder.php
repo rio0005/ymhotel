@@ -13,13 +13,13 @@ class Room_typeSeeder extends Seeder
     public function run(): void
     {
         \App\Models\Room_type::create([
-            'room_name' => 'スタンダード',
-            'people' => '4',
+            'room_name' => 'スーペリアルーム',
+            'people' => '3',
         ]);
 
         \App\Models\Room_type::create([
-            'room_name' => 'スイート',
-            'people' => '6',
+            'room_name' => 'スイートルーム',
+            'people' => '2',
         ]);
     }
 }

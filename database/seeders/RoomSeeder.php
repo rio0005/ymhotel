@@ -14,12 +14,12 @@ class RoomSeeder extends Seeder
     {
         \App\Models\Room::create([
             'room_type_id' => '1',
-            'room_number' => '506',
+            'room_number' => '206',
         ]);
 
         \App\Models\Room::create([
             'room_type_id' => '2',
-            'room_number' => '903',
+            'room_number' => '503',
         ]);
     }
 }

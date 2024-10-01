@@ -82,6 +82,7 @@ form {
 /* dateで入ってるデフォルトの「年/月/日」を消す */
 input[type="date"] {
   position: relative;
+  color: #5e5e5e;
 }
 
 input[type="date"]::after {
@@ -135,7 +136,7 @@ input[type="date"]::-webkit-datetime-edit {
         <input type="submit" value="予約" class="button">
         </div>
     </form>
-    <a href="../guest">利用者一覧ページ</a>
+    <a href="../room_type/create">部屋一覧へ戻る</a>
     </div>
 </body>
 </html>

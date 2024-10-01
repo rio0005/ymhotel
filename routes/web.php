@@ -27,7 +27,7 @@ Route::get('guest/form',[GuestController::class,'form']);
 Route::post('guest',[GuestController::class,'store'])->name('guest.store');
 
 
-Route::get('reservation/create',[ReservationController::class,'create']);
+// Route::get('reservation/create',[ReservationController::class,'create']);
 Route::get('reservation', [ReservationController::class, 'index']);
 Route::get('reservation/form', [ReservationController::class, 'form']);
 Route::post('reservation',[ReservationController::class,'store'])->name('reservation.store');
