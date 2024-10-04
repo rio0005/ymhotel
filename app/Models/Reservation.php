@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class reservation extends Model
 {
     use HasFactory;
@@ -21,7 +22,7 @@ class reservation extends Model
     }
 
     public function rooms() {
-        return $this->belongsToMany(Room::class,'details','reservation_id','room_id')
-        ->withPivot('days', 'fee');
+        return $this->belongsToMany(Room::class,'detail','reservation_id','room_id')
+        ->withPivot('days','fee');
     }
 }
