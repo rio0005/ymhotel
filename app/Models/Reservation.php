@@ -20,7 +20,8 @@ class reservation extends Model
         return $this->belongsTo(Guest::class);
     }
 
-    public function room() {
-        return $this->belongsToMany(Room::class,'detail','reservation_id','room_id');
+    public function rooms() {
+        return $this->belongsToMany(Room::class,'details','reservation_id','room_id')
+        ->withPivot('days', 'fee');
     }
 }

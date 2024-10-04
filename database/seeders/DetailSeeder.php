@@ -13,14 +13,16 @@ class DetailSeeder extends Seeder
     public function run(): void
     {
         \App\Models\Detail::create([
-
-            'check_in' => '2024-9-14',
+            'reservation_id' => '1',
+            'room_id' => '1',
+            'days' => '2024-9-14',
             'fee' => '30000',
         ]);
 
         \App\Models\Detail::create([
-
-            'check_in' => '2024-9-15',
+            'reservation_id' => '2',
+            'room_id' => '2',
+            'days' => '2024-9-15',
             'fee' => '500000',
         ]);
     }

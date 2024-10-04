@@ -12,13 +12,11 @@
     @foreach($details as $detail)
     <tr>
         <td>{{$detail->id}}</td>
-        <td>{{$detail->reservation_id}}</th>
+        <td>{{$detail->rooms->reservation_id}}</th>
         <td>{{$detail->room_id}}</td>
-        <td>{{$detail->check_in}}</th>
+        <td>{{$detail->days}}</th>
         <td>{{$detail->fee}}</th>
 
-        <td>{{$detail->room->first()->room_number}}</td>
-        <td>{{$detail->room->first()->pivot}}</td>
     </tr>
     @endforeach
     </table>

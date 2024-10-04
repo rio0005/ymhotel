@@ -18,9 +18,8 @@ class Room extends Model
         return $this->belongsTo(Room_type::class);
     }
 
-    public function reservation()
-    {
-        return $this->belongsToMany(reservation::class, 'detail', 'room_id', 'reservation_id');
-        // ->withPivot('days', 'price');
+    public function reservations(){
+        return $this->belongsToMany(reservation::class, 'details', 'room_id', 'reservation_id')
+        ->withPivot('days', 'fee');
     }
 }
