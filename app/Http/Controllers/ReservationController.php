@@ -12,7 +12,7 @@ class ReservationController extends Controller
     {
         $reservations = Reservation::all();
         return view('reservation.index', compact('reservations'));
-        $validated['guest_id'] = auth()->id();
+        // $validated['guest_id'] = auth()->id();
     }
 
     public function create() {
@@ -22,6 +22,8 @@ class ReservationController extends Controller
     public function form(){
         return view('reservation.form');
     }
+
+
 
     public function store(Request $request) {
         $reservations = Reservation::create([

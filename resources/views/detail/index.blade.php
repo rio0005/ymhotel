@@ -16,7 +16,6 @@
         <td>{{$detail->room_id}}</td>
         <td>{{$detail->days}}</th>
         <td>{{$detail->fee}}</th>
-
     </tr>
     @endforeach
     </table>

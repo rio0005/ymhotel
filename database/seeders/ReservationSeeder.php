@@ -22,7 +22,7 @@ class ReservationSeeder extends Seeder
         \App\Models\Reservation::create([
             'guest_id' => '2',
             'people' => '2',
-            'check_in' => '2024-9-20',
+            'check_in' => '2024-9-15',
             'check_out' => '2024-9-17',
         ]);
     }

@@ -9,6 +9,7 @@ use App\Http\Controllers\RoomController;
 use App\Http\Controllers\Room_typeController;
 use App\Models\guest;
 use App\Models\Room_type;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,6 @@ Route::get('room_type',[Room_typeController::class, 'index']);
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('main',[MainController::class,'index']);
