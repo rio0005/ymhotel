@@ -7,8 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>部屋一覧</title>
     <style>
+        body {
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ffe3e3;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: "Protest Strike", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-left: 1rem;
+        }
+
+        li {
+            list-style: none;
+            margin-right: 3rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
         /* 背景 ----------------------------*/
-        .bg_pattern {
+        /* .bg_pattern {
             position: fixed;
             top: 0;
             left: 0;
@@ -22,12 +59,8 @@
         .Boxes {
             background-image: linear-gradient(#ffc10731 2px, transparent 2px), linear-gradient(to right, #ffc10738 2px, #ffffff 2px);
             background-size: 40px 40px;
-        }
+        } */
         /* 背景ここまで--------------------- */
-
-        body {
-            text-align: center;
-        }
 
         h1 {
             color: rgba(192, 46, 2, 0.884);
@@ -111,12 +144,22 @@
                 left: -10%;
             }
         }
-        
+
         /* 予約ボタンここまで ----------------------*/
     </style>
 </head>
 
 <body>
+    <header>
+        <h1><a href="#">YMhotel</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../room_type/create">部屋一覧</a></li>
+                <li><a href="#">レストラン一覧</a></li>
+                <li><a href="../guest/form">新規会員登録</a> / <a href="#">ログイン</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="bg_pattern Boxes"></div>
     <h1>部屋一覧</h1>
     <div class="center">
