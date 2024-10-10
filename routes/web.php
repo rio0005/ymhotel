@@ -10,6 +10,7 @@ use App\Http\Controllers\Room_typeController;
 use App\Models\guest;
 use App\Models\Room_type;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\RestaurantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +50,5 @@ Route::get('/', function () {
 
 
 Route::get('main',[MainController::class,'index']);
+
+Route::get('restaurant', [RestaurantController::class, 'index']);

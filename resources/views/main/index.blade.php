@@ -8,18 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap" rel="stylesheet">
     <title>ymホテル_トップページ</title>
     <style>
         body {
             margin: 0;
         }
 
-    /* ナビゲーション --------------------*/
+        /* ナビゲーション --------------------*/
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: #ffe3e3;
+            background: rgb(187, 222, 255);
             position: fixed;
             width: 100%;
             z-index: 1;
@@ -37,6 +41,10 @@
             margin-right: 3rem;
         }
 
+        .Registration {
+            color: #a14e00;
+        }
+
         a {
             text-decoration: none;
             color: black;
@@ -47,7 +55,7 @@
             align-items: center;
         }
 
-    /* ナビゲーションここまで -------------------*/
+        /* ナビゲーションここまで -------------------*/
 
         /* ホーム画像 ----------------------------------*/
         .img-frame {
@@ -177,33 +185,45 @@
 
         /* ホーム画像ここまで -----------------------*/
 
-
-
         h2 {
+            font-family: "Kaisei Decol", serif;
+            font-weight: 700;
+            font-style: normal;
             text-align: center;
             margin: 4rem 20rem;
             padding: 2rem;
-            border: 5px solid #88ddff;
+            border: 8px solid #815800;
             border-radius: 30px;
         }
 
         h3 {
+            font-family: "Kaisei Decol", serif;
+            font-weight: 700;
+            font-style: normal;
             color: rgb(68, 164, 255);
         }
 
         .colum:nth-child(even) {
             display: flex;
             flex-direction: row-reverse;
-            margin: 5rem 4rem;
+            margin: 4rem 4rem;
             text-align: center;
             align-items: center;
         }
 
         .colum:nth-child(odd) {
             display: flex;
-            margin: 5rem 4rem;
+            margin: 4rem 4rem;
             text-align: center;
             align-items: center;
+        }
+
+        .colum-text {
+            margin: 20px;
+        }
+
+        img {
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -214,8 +234,8 @@
         <nav>
             <ul>
                 <li><a href="../room_type/create">部屋一覧</a></li>
-                <li><a href="#">レストラン一覧</a></li>
-                <li><a href="../guest/form">新規会員登録</a> / <a href="#">ログイン</a></li>
+                <li><a href="../restaurant">レストラン</a></li>
+                <li><a class="Registration" href="../guest/form">新規会員登録</a> / <a class="Registration" href="#">ログイン</a></li>
             </ul>
         </nav>
     </header>
